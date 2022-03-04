@@ -1,10 +1,6 @@
 #   Faça um programa que leia 5 números e informe o maior número.
-aux = 0
-maior = 0
-while aux < 5:
-    aux += 1
-    n = float(input("Informe um número: "))
-    if n > maior:
-        maior = n
+maior = float(input("Informe um número: "))
+for _ in range(4):
+    maior = max(maior, float(input("Informe um número: ")))
 
 print(f"O maior número é: {maior}")
