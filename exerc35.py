@@ -2,7 +2,7 @@
 # 1 e um número inteiro informado pelo usuário.
 import random
 
-numero_fornecido = random.randint(1, 100)
+numero_fornecido = random.randint(2, 100)
 contador = 0
 lista = []
 numero = numero_fornecido
