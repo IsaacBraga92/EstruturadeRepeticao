@@ -4,7 +4,7 @@ import random
 
 numero_fornecido = random.randint(2, 100)
 contador = 0
-lista = []
+lista_numeros_primos = []
 numero = numero_fornecido
 auxiliar = numero
 while numero > 0:
@@ -12,7 +12,7 @@ while numero > 0:
         if numero % n == 0:
             contador += 1
     if contador == 2:
-        lista.append(numero)
+        lista_numeros_primos.append(numero)
     numero -= 1
     contador = 0
-print(f"Os números primos entre 1 e {numero_fornecido}, são {lista}.")
+print(f"Os números primos entre 1 e {numero_fornecido}, são {lista_numeros_primos}.")
