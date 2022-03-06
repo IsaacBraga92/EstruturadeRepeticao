@@ -10,4 +10,4 @@ for n in range(1, numero + 1):
 if contador == 2:
     print("O número é primo!")
 else:
-    print(f"Tem {contador} acima de dois.")
+    print(f"Tem {contador} divisores, logo não é primo.")
