@@ -16,4 +16,42 @@ Exemplo de saída do programa:
 '''
 divida = float(input("Informe o valor da dívida: "))
 parcela = 0
+juros = 0
+valor_juros = 0
+print("Valor da dívida: ", end='  ')
+print("Valor do juros: ",end='  ')
+print("Quantidade de parcelas: ",end='  ')
+print("Valor da parcela: ")
+
+for i in range(5):
+    if parcela == 0:
+        juros = 0
+    elif parcela == 3:
+        juros = 0.1
+    elif parcela == 6:
+        juros = 0.15
+    elif parcela == 9:
+        juros = 0.2
+    elif parcela == 12:
+        juros = 0.25
+
+    valor_juros = divida*juros
+    divida_mais_juros = divida + valor_juros
+    if parcela ==0:
+        parcela +=1
+        valor_parcelas = divida_mais_juros / parcela
+        parcela = 0
+    else:
+        valor_parcelas = divida_mais_juros / parcela
+    print("R$: ", round(divida_mais_juros,2), end='          ')
+    print(round(valor_juros,2),end='                ')
+    if parcela == 0:
+        parcela = 1
+        print(parcela, end='                                     ')
+        parcela = 0
+    else:
+        print(parcela, end='                              ')
+    print("R$: ", round(valor_parcelas,2))
+    parcela+=3
+
 
